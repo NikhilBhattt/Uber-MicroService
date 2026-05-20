@@ -7,6 +7,8 @@ This project is a microservices-based architecture for an Uber-like application.
 3. **Ride Service**: Handles ride-related operations such as booking, tracking, and ride history.
 4. **User Service**: Manages user-related operations such as registration, authentication, and profile management.
 
+---
+
 ## Project Structure
 
 ```
@@ -70,21 +72,25 @@ Uber MicroService/
 └── README.md
 ```
 
+---
+
 ## Prerequisites
 
-- Node.js installed on your system.
-- MongoDB database setup.
-- RabbitMQ setup for message brokering.
+- **Node.js**: Ensure Node.js is installed on your system.
+- **MongoDB**: Set up a MongoDB database.
+- **RabbitMQ**: Install and configure RabbitMQ for message brokering.
+
+---
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone <repository-url>
    cd Uber MicroService
    ```
 
-2. Install dependencies for each service:
+2. **Install dependencies for each service**:
    ```bash
    cd gateway && npm install
    cd ../captain && npm install
@@ -92,34 +98,38 @@ Uber MicroService/
    cd ../user && npm install
    ```
 
-3. Set up environment variables:
-   - Each service has a `.env` file. Update the `.env` files with the required configuration.
+3. **Set up environment variables**:
+   - Each service contains a `.env` file. Update these files with the required configuration values.
+
+---
 
 ## Running the Services
 
-1. Start the Gateway service:
+1. **Start the Gateway service**:
    ```bash
    cd gateway
    node server.js
    ```
 
-2. Start the Captain service:
+2. **Start the Captain service**:
    ```bash
    cd captain
    node server.js
    ```
 
-3. Start the Ride service:
+3. **Start the Ride service**:
    ```bash
    cd ride
    node server.js
    ```
 
-4. Start the User service:
+4. **Start the User service**:
    ```bash
    cd user
    node server.js
    ```
+
+---
 
 ## API Endpoints
 
@@ -130,7 +140,7 @@ Uber MicroService/
 - **POST /captain/register**: Register a new captain.
 - **POST /captain/login**: Authenticate a captain.
 - **POST /captain/logout**: Logout a captain.
-- **POST /captain/new-rides**: Checks for new ride.
+- **POST /captain/new-rides**: Check for new rides.
 
 ### Ride Service
 - **POST /ride/create-ride**: Book a ride.
@@ -140,6 +150,8 @@ Uber MicroService/
 - **POST /user/login**: Authenticate a user.
 - **POST /user/logout**: Logout a user.
 
+---
+
 ## Technologies Used
 
 - **Node.js**: Backend runtime.
@@ -147,9 +159,13 @@ Uber MicroService/
 - **MongoDB**: Database.
 - **RabbitMQ**: Message broker.
 
+---
+
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request.
+
+---
 
 ## License
 
